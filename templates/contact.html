@@ -1,0 +1,27 @@
+{% extends 'accumulus.html' %}
+
+{% block body %}
+<div class="decorateImage"><img src="../static/otherBridgeNewYork.jpg"></div>
+
+<fieldset>
+{% if msgSent %}
+Your message has been sent <hr>
+{% endif %}
+<div class='header'> Contact Us </div>
+<hr>
+110 East 59th Street New York, NY 10022<br>
+T: 212-490-7570<br>
+Facsimile: 212-490-7576<br><br>
+For more information please contact us at accumulus@accumuluscapital.com<br><br>
+<!--
+<form action='/msg' method ='post' class="pure-form">
+        <input id="from" name ="email" type="text" placeholder="Your Email"> <br><br>
+        <input id="subj" name="subj" type="text" placeholder="Subject"> <br><br>
+        <textarea id="msg" name="msg" placeholder="Your Message"> </textarea> <br><br>
+        <button type="submit" class="pure-button pure-button-primary">Send</button>
+</form>-->
+<div class='header'>Find Us </div>
+<hr>
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Accumulus%20Capital%20Management%20LLC%2C%20East%2059th%20Street%2C%20New%20York%2C%20NY&key=AIzaSyCRt1Bl2_RewOMZS3LhtARDvyjVM8dmuKM" allowfullscreen></iframe>
+</fieldset>
+{% endblock %}
