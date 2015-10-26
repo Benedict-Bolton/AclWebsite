@@ -89,5 +89,6 @@ def send():
 
 
 if __name__ == '__main__':
+  port = int(os.environ.get("PORT", 33507))
   app.debug = True
   app.run()
