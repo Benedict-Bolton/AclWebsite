@@ -1,0 +1,29 @@
+{% extends 'accumulus.html' %}
+
+{% block body %}
+
+<div class="words">
+
+<div class="header">Quarterly Letters</div>
+<p>
+<table class="pure-table pure-table-horizontal">
+  <thread>
+    <tr>
+      <th> Letter Title </th>
+    </tr>
+  </thread>
+  <tbody>
+  {% for file in files %}
+    <tr>
+      <th>
+        <a class="fileLink" href="static\statements\{{file}}"> {{ file }} </a>
+      </th>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</p>
+
+
+
+{% endblock %}

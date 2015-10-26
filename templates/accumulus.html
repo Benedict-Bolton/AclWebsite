@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+
+<!-- Creates the webpages title -->
+  <title>Accumulus Capital</title>
+
+  <!--Creates the Shortcut Icon -->
+  <link rel="Shortcut Icon" href="../static/Sea_Shell.png" type='image/x-icon'>
+
+  <meta name="description" content="Accumulus Capital specializes in alternative investment management advice and portfolio management">
+
+  <!-- These allow the html to load the css stylesheets that add design.
+  To change the css styling you need to edit design.css
+  design.css is for general styling -->
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  <link href="../static/design.css" rel="stylesheet">
+  <style>
+    #{{currentpage}} {color: #000000; background-color:#EEEEEE}
+  </style>
+</head>
+<body>
+
+<div class="pure-g topSection">
+
+  <div class="pure-u-1-3">
+    <div class="titleImage"><img src="../static/accumulusLogo.png"></div>
+  </div>
+
+  <div class="pure-u-2-3">
+    <div id="topMenu" class="pure-menu pure-menu-open pure-menu-horizontal one-edge-shadow">
+
+      <li><a id="comp" href="/company">Company</a></li>
+      <li><a id="team" href="/team">Team</a></li>
+      <li><a id="philo" href="/invest">Investment Philosophy</a></li>
+      {% if client%}
+      <li><a id='letr' href="/letter">Quarterly Letters</a></li>
+      <li><a id='pubs' href="/pubs">Publications</a></li>
+      <li><a id='contact' href="/contact">Contact Us</a></li>
+      <li><a href="/logout">Logout</a></li>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+
+<section class="mainBody">
+
+
+
+  {% block body %}
+	{% endblock %}
+
+
+</section>
+</body>
+
+<footer>
+<div id=footerWords>
+  <div id="info"> 110 East 59th street New York, NY 10022 </div>
+  <hr>
+  <div id="endLinks"> <a href="/contact">Contact</a> | Legal </div>
+</div>
+</footer>
+
+</html>
