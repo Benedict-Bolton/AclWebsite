@@ -13,7 +13,7 @@ from email.mime.text import MIMEText
 app= Flask(__name__, static_folder='static')
 app.secret_key = (';\x88\xcb\xdfz\xafh\xff\xff:*8!\x96\xcd\xd5\x0b]\xef\x9cF\xa0\xc8')
 
-genPass = "idk"
+genPass = "accumulus00!"
 
 
 @app.route('/', methods=['GET', 'POST'])
