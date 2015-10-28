@@ -56,7 +56,7 @@ def philo():
 
 @app.route('/letter', methods=['GET', 'POST'])
 def letter():
-  path = "static\statements"
+  path = "static/statements"
   print path
   letterFiles = [ f for f in listdir(path) if isfile(join(path,f))]
   print letterFiles
